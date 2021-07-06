@@ -84,6 +84,7 @@ const mapStateToProps = (state) => ({
     users: state.users,
     initialUsers: state.initialUsers,
     countUsers: state.countUsers,
+    isSort: state.isSort
 });
 
 export default connect(mapStateToProps, {setUsers, toggleSort, deleteUser, filterUser})(Table);
